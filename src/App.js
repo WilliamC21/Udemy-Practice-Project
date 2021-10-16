@@ -43,10 +43,12 @@ function App() {
 
   return (
     <div>
-      <section id="user-form"></section>
-      <NewUserForm onAddUser={saveUserDataHandler} />
-      <section id="users"></section>
-      <Users items={users} />
+      <section id="user-form">
+        <NewUserForm onAddUser={saveUserDataHandler} />
+      </section>
+      <section id="users">
+        <Users items={users} />
+      </section>
     </div>
   );
 }

@@ -1,0 +1,32 @@
+.newUser {
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 95%;
+}
+
+.newUser input {
+  font: inherit;
+  padding: 0.3rem;
+  border-radius: 9px;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.newUser input:focus {
+  background: #eeb5ab;
+  outline: none;
+}
+
+.newUser input:hover {
+  background: #eeb5ab;
+}
+
+.newUser label {
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}

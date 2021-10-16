@@ -1,16 +1,12 @@
-.user-list {
-  width: 50rem;
+.userList {
+  width: 90%;
   padding: 1rem;
   margin: 2rem auto;
   display: flex;
   flex-direction: column-reverse;
-  text-align: center;
-  align-items: left;
-  justify-content: space-around;
 
-  background-color: rgba(175, 34, 34, 0.767);
-  font-size: 2rem;
-  border-radius: 10px;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .empty-list-message {
