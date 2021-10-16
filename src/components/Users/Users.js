@@ -4,7 +4,7 @@ import "./Users.css";
 
 const Users = (props) => {
   if (props.items.length === 0) {
-    return <h2>No Users</h2>;
+    return <div className="empty-list-message">No Users</div>;
   }
   return (
     <li className="user-list">

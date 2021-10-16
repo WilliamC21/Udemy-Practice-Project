@@ -12,3 +12,10 @@
   font-size: 2rem;
   border-radius: 10px;
 }
+
+.empty-list-message {
+  text-align: center;
+  font-weight: bold;
+  margin: 5rem;
+  font-size: 2rem;
+}
