@@ -7,7 +7,7 @@ const Users = (props) => {
     return <h2>No Users</h2>;
   }
   return (
-    <li>
+    <li className="user-list">
       {props.items.map((expense) => (
         <User userName={expense.userName} age={expense.age} />
       ))}
