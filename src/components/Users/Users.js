@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import User from "./User";
 import Card from "../UI/Card";
+import Wrapper from "../Helpers/Wrapper";
 import "./Users.css";
 
 const Users = (props) => {

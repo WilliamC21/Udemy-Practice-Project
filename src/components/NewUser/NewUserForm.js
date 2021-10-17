@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
 import ErrorModal from "../UI/ErrorModal";
-
+import Wrapper from "../Helpers/Wrapper";
 import classes from "./NewUserForm.module.css";
 
 const NewUser = (props) => {
+  const nameInputRef = useRef();
+  const ageInputRef = useRef();
+
   const [enteredUserName, setEnteredUserName] = useState("");
   const [enteredAge, setEnteredAge] = useState("");
   const [error, setError] = useState();
@@ -52,7 +55,7 @@ const NewUser = (props) => {
   };
 
   return (
-    <div>
+    <Wrapper>
       {error && (
         <ErrorModal
           title={error.title}
@@ -68,6 +71,7 @@ const NewUser = (props) => {
             type="text"
             value={enteredUserName}
             onChange={userNameChangeHandler}
+            ref={nameInputRef}
           />
 
           <label htmlFor="age">Age</label>
@@ -78,12 +82,13 @@ const NewUser = (props) => {
             step="1"
             value={enteredAge}
             onChange={ageChangeHandler}
+            ref={ageInputRef}
           />
 
           <Button type="submit">Add User</Button>
         </form>
       </Card>
-    </div>
+    </Wrapper>
   );
 };
 

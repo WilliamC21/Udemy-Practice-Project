@@ -42,14 +42,14 @@ function App() {
   };
 
   return (
-    <div>
+    <>
       <section id="user-form">
         <NewUserForm onAddUser={saveUserDataHandler} />
       </section>
       <section id="users">
         <Users items={users} />
       </section>
-    </div>
+    </>
   );
 }
 
